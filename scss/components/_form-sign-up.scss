@@ -24,11 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-dark;
-  }
 }
 
 .form-sign-up__icon {

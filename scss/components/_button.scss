@@ -15,4 +15,9 @@
   border-radius: 4px;
   border-color: transparent;
   transition: background-color $tr-duration $tr-function, color $tr-duration $tr-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-dark;
+  }
 }

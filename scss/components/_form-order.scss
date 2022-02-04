@@ -79,9 +79,4 @@
 .form-order__button {
   display: block;
   margin: 0 auto;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-dark;
-  }
 }

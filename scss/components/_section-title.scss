@@ -1,6 +1,12 @@
 .section-title {
   color: $title-color;
-  @include font-for-text(700, 36px, 1.17, null);
+  @include font-for-text(700, 28px, 1.18, null);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

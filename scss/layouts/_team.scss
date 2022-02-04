@@ -1,9 +1,30 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: $bgd-grey;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__list {
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: -30px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.team-list__item {
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
