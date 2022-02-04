@@ -1,0 +1,36 @@
+.form-sign-up__label {
+  display: inline-block;
+  margin-bottom: 20px;
+  @include font-for-text(500, 14px, 1.14, null);
+  text-transform: uppercase;
+}
+.form-sign-up__wrap {
+  display: flex;
+  align-items: center;
+}
+.form-sign-up__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $bgd-dark;
+  @include font-for-text(400, 16px, 1.25, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.form-sign-up__button {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-dark;
+  }
+}
+
+.form-sign-up__icon {
+  margin-left: 10px;
+}
