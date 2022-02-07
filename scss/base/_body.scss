@@ -6,3 +6,6 @@ body {
   color: $text-color;
   background-color: $bgd-light;
 }
+body.menu-open {
+  overflow: hidden;
+}

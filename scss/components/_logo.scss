@@ -1,8 +1,12 @@
 .logo {
   font-family: $font-logo;
-  @include font-for-text(700, 26px, 1.19, null);
+  @include font-for-text(700, 24px, 1.17, null);
   color: $accent-color;
   text-decoration: none;
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__text {
   color: #000000;

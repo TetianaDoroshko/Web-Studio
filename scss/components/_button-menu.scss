@@ -1,0 +1,37 @@
+.button-menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  fill: $title-color;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.button-menu__icon-open {
+  width: 24px;
+  height: 16px;
+  .button-menu:hover &,
+  .button-menu:focus & {
+    fill: $accent-color;
+  }
+}
+.button-menu__icon-close {
+  display: none;
+  width: 20px;
+  height: 20px;
+  .button-menu:hover &,
+  .button-menu:focus & {
+    fill: $accent-color;
+  }
+}
+.button-menu.is-open .button-menu__icon-close {
+  display: block;
+}
+.button-menu.is-open .button-menu__icon-open {
+  display: none;
+}
