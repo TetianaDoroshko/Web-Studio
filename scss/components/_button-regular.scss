@@ -10,8 +10,9 @@
   @include font-for-btn();
   color: $title-color;
   background-color: $bgd-grey;
-  border-color: transparent;
+  border: none;
   border-radius: 4px;
+
   transition: background-color $tr-duration $tr-function, color $tr-duration $tr-function,
     box-shadow $tr-duration $tr-function;
 

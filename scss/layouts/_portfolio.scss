@@ -1,7 +1,17 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-.portfolio__card-set {
-  margin-top: 50px;
+.portfolio__button-list {
+  margin-bottom: 25px;
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
 }

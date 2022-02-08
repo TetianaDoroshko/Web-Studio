@@ -50,8 +50,23 @@
   }
 }
 .form-order__agreement {
-  margin: 20px 12px 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
+
+.form-order__label-agreem {
+  @include font-for-text(400, 12px, 1.17, null);
+
+  @media (min-width: 1200px) {
+    @include font-for-text(400, 14px, 1.71, null);
+  }
+}
+
 .form-order__checkbox {
   appearance: none;
   position: absolute;
