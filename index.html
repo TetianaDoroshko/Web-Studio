@@ -179,15 +179,44 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="works__list">
             <li class="works__item">
-              <img src="./images/box-1.jpg" alt="Десктопные приложения" width="370" />
+              <img
+                srcset="
+                  ./images/works/work-1-370.jpg   370w,
+                  ./images/works/work-1-740.jpg   740w,
+                  ./images/works/work-1-1110.jpg 1110w
+                "
+                sizes="370px"
+                src="./images/works/work-1-370.jpg"
+                alt="Десктопные приложения"
+              />
               <p class="works__text">Десктопные приложения</p>
             </li>
             <li class="works__item">
-              <img src="./images/box-2.jpg" alt="Мобильные приложения" width="370" />
+              <img
+                srcset="
+                  ./images/works/work-2-370.jpg   370w,
+                  ./images/works/work-2-740.jpg   740w,
+                  ./images/works/work-2-1110.jpg 1110w
+                "
+                sizes="370px"
+                src="./images/works/work-2-370.jpg"
+                alt="Мобильные приложения"
+                width="370"
+              />
               <p class="works__text">Мобильные приложения</p>
             </li>
             <li class="works__item">
-              <img src="./images/box-3.jpg" alt="Дизайн" width="370" />
+              <img
+                srcset="
+                  ./images/works/work-3-370.jpg   370w,
+                  ./images/works/work-3-740.jpg   740w,
+                  ./images/works/work-3-1110.jpg 1110w
+                "
+                sizes="370px"
+                src="./images/works/work-3-370.jpg"
+                alt="Дизайн"
+                width="370"
+              />
               <p class="works__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -199,12 +228,39 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="personal-card team-list__item">
-              <img
-                src="./images/img-1.jpg"
-                alt="Фото Игорь Демьяненко"
-                width="270"
-                class="personal-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-1-desk-270.jpg 1x,
+                    ./images/team/img-1-desk-540.jpg 2x,
+                    ./images/team/img-1-desk-810.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-1-tab-354.jpg  1x,
+                    ./images/team/img-1-tab-708.jpg  2x,
+                    ./images/team/img-1-tab-1062.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-1-mob-450.jpg  1x,
+                    ./images/team/img-1-mob-900.jpg  2x,
+                    ./images/team/img-1-mob-1350.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img-1-desk-270.jpg"
+                  alt="Фото Игорь Демьяненко"
+                  class="personal-card__img"
+                />
+              </picture>
               <div class="personal-card__description">
                 <h3 class="personal-card__title">Игорь Демьяненко</h3>
                 <p class="personal-card__position" lang="en">Product Designer</p>
@@ -241,12 +297,39 @@
               </div>
             </li>
             <li class="personal-card team-list__item">
-              <img
-                src="./images/img-2.jpg"
-                alt="Фото Ольга Репина"
-                width="270"
-                class="personal-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-2-desk-270.jpg 1x,
+                    ./images/team/img-2-desk-540.jpg 2x,
+                    ./images/team/img-2-desk-810.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-2-tab-354.jpg  1x,
+                    ./images/team/img-2-tab-708.jpg  2x,
+                    ./images/team/img-2-tab-1062.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-2-mob-450.jpg  1x,
+                    ./images/team/img-2-mob-900.jpg  2x,
+                    ./images/team/img-2-mob-1350.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img-2-desk-270.jpg"
+                  alt="Фото Ольга Репина"
+                  class="personal-card__img"
+                />
+              </picture>
               <div class="personal-card__description">
                 <h3 class="personal-card__title">Ольга Репина</h3>
                 <p class="personal-card__position" lang="en">Frontend Developer</p>
@@ -283,12 +366,39 @@
               </div>
             </li>
             <li class="personal-card team-list__item">
-              <img
-                src="./images/img-3.jpg"
-                alt="Фото Николай Тарасов"
-                width="270"
-                class="personal-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-3-desk-270.jpg 1x,
+                    ./images/team/img-3-desk-540.jpg 2x,
+                    ./images/team/img-3-desk-810.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-3-tab-354.jpg  1x,
+                    ./images/team/img-3-tab-708.jpg  2x,
+                    ./images/team/img-3-tab-1062.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-3-mob-450.jpg  1x,
+                    ./images/team/img-3-mob-900.jpg  2x,
+                    ./images/team/img-3-mob-1350.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img-3-desk-270.jpg"
+                  alt="Фото Николай Тарасов"
+                  class="personal-card__img"
+                />
+              </picture>
               <div class="personal-card__description">
                 <h3 class="personal-card__title">Николай Тарасов</h3>
                 <p class="personal-card__position" lang="en">Marketing</p>
@@ -325,12 +435,39 @@
               </div>
             </li>
             <li class="personal-card team-list__item">
-              <img
-                src="./images/img-4.jpg"
-                alt="Фото Михаил Ермаков"
-                width="270"
-                class="personal-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-4-desk-270.jpg 1x,
+                    ./images/team/img-4-desk-540.jpg 2x,
+                    ./images/team/img-4-desk-810.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-4-tab-354.jpg  1x,
+                    ./images/team/img-4-tab-708.jpg  2x,
+                    ./images/team/img-4-tab-1062.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-4-mob-450.jpg  1x,
+                    ./images/team/img-4-mob-900.jpg  2x,
+                    ./images/team/img-4-mob-1350.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img-4-desk-270.jpg"
+                  alt="Фото Михаил Ермаков"
+                  class="personal-card__img"
+                />
+              </picture>
               <div class="personal-card__description">
                 <h3 class="personal-card__title">Михаил Ермаков</h3>
                 <p class="personal-card__position" lang="en">UI Designer</p>

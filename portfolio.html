@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <title>Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -17,7 +17,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./CSS/main.min.css" />
-    <!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
   </head>
 
   <body>
@@ -141,7 +140,39 @@
             <li class="card-set__item">
               <a class="card" href="">
                 <div class="card__vision">
-                  <img class="card__img" src="./images/portfolio-1.jpg" alt="Проект Технокряк" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-1-mob-450.jpg  1x,
+                        ./images/portfolio/port-1-mob-900.jpg  2x,
+                        ./images/portfolio/port-1-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-1-tab-354.jpg  1x,
+                        ./images/portfolio/port-1-tab-708.jpg  2x,
+                        ./images/portfolio/port-1-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-1-desk-370.jpg  1x,
+                        ./images/portfolio/port-1-desk-740.jpg  2x,
+                        ./images/portfolio/port-1-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-1-desk-370.jpg"
+                      alt="Проект Технокряк"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -157,12 +188,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-2.jpg"
-                    alt="Проект New Orlean"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-2-mob-450.jpg  1x,
+                        ./images/portfolio/port-2-mob-900.jpg  2x,
+                        ./images/portfolio/port-2-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-2-tab-354.jpg  1x,
+                        ./images/portfolio/port-2-tab-708.jpg  2x,
+                        ./images/portfolio/port-2-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-2-desk-370.jpg  1x,
+                        ./images/portfolio/port-2-desk-740.jpg  2x,
+                        ./images/portfolio/port-2-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-2-desk-370.jpg"
+                      alt="Проект New Orlean"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eos
                     error impedit neque. Eius aliquid earum ad quod nisi illum! Vero odit nisi sit?
@@ -177,12 +235,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-3.jpg"
-                    alt="Проект Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-3-mob-450.jpg  1x,
+                        ./images/portfolio/port-3-mob-900.jpg  2x,
+                        ./images/portfolio/port-3-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-3-tab-354.jpg  1x,
+                        ./images/portfolio/port-3-tab-708.jpg  2x,
+                        ./images/portfolio/port-3-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-3-desk-370.jpg  1x,
+                        ./images/portfolio/port-3-desk-740.jpg  2x,
+                        ./images/portfolio/port-3-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-3-desk-370.jpg"
+                      alt="Проект Ресторан Seafood"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit,
                     eveniet eius quas recusandae iure ullam explicabo qui officiis fugit ut
@@ -198,12 +283,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-4.jpg"
-                    alt="Проект Прайм"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-4-mob-450.jpg  1x,
+                        ./images/portfolio/port-4-mob-900.jpg  2x,
+                        ./images/portfolio/port-4-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-4-tab-354.jpg  1x,
+                        ./images/portfolio/port-4-tab-708.jpg  2x,
+                        ./images/portfolio/port-4-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-4-desk-370.jpg  1x,
+                        ./images/portfolio/port-4-desk-740.jpg  2x,
+                        ./images/portfolio/port-4-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-4-desk-370.jpg"
+                      alt="Проект Прайм"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit,
                     eveniet eius quas.
@@ -218,12 +330,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-5-mob-450.jpg  1x,
+                        ./images/portfolio/port-5-mob-900.jpg  2x,
+                        ./images/portfolio/port-5-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-5-tab-354.jpg  1x,
+                        ./images/portfolio/port-5-tab-708.jpg  2x,
+                        ./images/portfolio/port-5-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-5-desk-370.jpg  1x,
+                        ./images/portfolio/port-5-desk-740.jpg  2x,
+                        ./images/portfolio/port-5-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-5-desk-370.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit,
                     eveniet eius quasicing elit.
@@ -238,12 +377,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-6.jpg"
-                    alt="Проект Inspiration"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-6-mob-450.jpg  1x,
+                        ./images/portfolio/port-6-mob-900.jpg  2x,
+                        ./images/portfolio/port-6-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-6-tab-354.jpg  1x,
+                        ./images/portfolio/port-6-tab-708.jpg  2x,
+                        ./images/portfolio/port-6-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-6-desk-370.jpg  1x,
+                        ./images/portfolio/port-6-desk-740.jpg  2x,
+                        ./images/portfolio/port-6-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-6-desk-370.jpg"
+                      alt="Проект Inspiration"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elitsit amet consectetur
                     adipisicing elit. Obcaecati, suscipit, eveniet eius quasicing elit.
@@ -258,12 +424,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-7.jpg"
-                    alt="Проект Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-7-mob-450.jpg  1x,
+                        ./images/portfolio/port-7-mob-900.jpg  2x,
+                        ./images/portfolio/port-7-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-7-tab-354.jpg  1x,
+                        ./images/portfolio/port-7-tab-708.jpg  2x,
+                        ./images/portfolio/port-7-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-7-desk-370.jpg  1x,
+                        ./images/portfolio/port-7-desk-740.jpg  2x,
+                        ./images/portfolio/port-7-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-7-desk-370.jpg"
+                      alt="Проект Limited Edition"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elitsit amet consectetur
                     adipisicing elit. Obcaecati, suscipit, eveniet eius quasicing elit.
@@ -278,12 +471,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-8-mob-450.jpg  1x,
+                        ./images/portfolio/port-8-mob-900.jpg  2x,
+                        ./images/portfolio/port-8-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-8-tab-354.jpg  1x,
+                        ./images/portfolio/port-8-tab-708.jpg  2x,
+                        ./images/portfolio/port-8-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-8-desk-370.jpg  1x,
+                        ./images/portfolio/port-8-desk-740.jpg  2x,
+                        ./images/portfolio/port-8-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-8-desk-370.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elitsit amet consectetur
                     adipisicing elit. Obcaecati, suscipit, eveniet eius quasicing elit. Lorem ipsum
@@ -299,12 +519,39 @@
             <li class="card-set__item">
               <a class="card" href="" lang="en">
                 <div class="card__vision">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio-9.jpg"
-                    alt="Проект Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-9-mob-450.jpg  1x,
+                        ./images/portfolio/port-9-mob-900.jpg  2x,
+                        ./images/portfolio/port-9-mob-1350.jpg 3x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-9-tab-354.jpg  1x,
+                        ./images/portfolio/port-9-tab-708.jpg  2x,
+                        ./images/portfolio/port-9-tab-1062.jpg 3x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-9-desk-370.jpg  1x,
+                        ./images/portfolio/port-9-desk-740.jpg  2x,
+                        ./images/portfolio/port-9-desk-1110.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/port-9-desk-370.jpg"
+                      alt="Проект Growing Business"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Lorem ipsum dolor sit amet consectetur adipisicing elitsit amet consectetur
                     adipisicing eliveritatis? Lorem ipsum, dolor sit amet consectet Lorem ipsum
