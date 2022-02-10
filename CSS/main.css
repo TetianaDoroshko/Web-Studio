@@ -178,6 +178,7 @@ body.menu-open {
 }
 
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +332,10 @@ body.menu-open {
 }
 
 .button-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -385,10 +390,10 @@ body.menu-open {
 .mobile-menu {
   position: absolute;
   z-index: 2;
-  top: 100%;
+  top: 0;
   left: 0;
-  width: 100%;
-  height: calc(100vh - 60px);
+  width: 100vw;
+  height: 100vh;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -674,6 +679,12 @@ body.menu-open {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .features__sub-title {
+    text-align: left;
+  }
 }
 
 .works {
@@ -1302,7 +1313,7 @@ body.menu-open {
   padding-bottom: 60px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
